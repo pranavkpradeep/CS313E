@@ -133,14 +133,7 @@ class Cube (object):
     self.side = side
     self.vertices = []
     radius = self.side * .5
-    '''self.vertices.append(Point(x + radius, y + radius, z + radius))
-    self.vertices.append(Point(x - radius, y + radius, z + radius))
-    self.vertices.append(Point(x - radius, y - radius, z + radius))
-    self.vertices.append(Point(x - radius, y - radius, z - radius))
-    self.vertices.append(Point(x + radius, y - radius, z - radius))
-    self.vertices.append(Point(x + radius, y - radius, z + radius))
-    self.vertices.append(Point(x - radius, y + radius, z - radius))
-    self.vertices.append(Point(x + radius, y + radius, z - radius))'''
+    
     self.vertex1 = (Point(x + radius, y + radius, z + radius))
     self.vertex2 = (Point(x - radius, y + radius, z + radius))
     self.vertex3 = (Point(x - radius, y - radius, z + radius))
@@ -149,6 +142,7 @@ class Cube (object):
     self.vertex6 = (Point(x + radius, y - radius, z + radius))
     self.vertex7 = (Point(x - radius, y + radius, z - radius))
     self.vertex8 = (Point(x + radius, y + radius, z - radius))
+    
     self.vertices.append(self.vertex1)
     self.vertices.append(self.vertex2)
     self.vertices.append(self.vertex3)
